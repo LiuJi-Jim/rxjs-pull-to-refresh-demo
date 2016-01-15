@@ -1,0 +1,35 @@
+@import (reference) "./base";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, "Microsoft YaHei", sans-serif;
+}
+
+.h-box {
+  .h-box();
+}
+
+.v-box {
+  .v-box();
+}
+
+.page {
+  position: absolute;
+  .v-box();
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  > .body {
+    position: relative;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
